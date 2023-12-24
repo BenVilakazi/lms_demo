@@ -1,51 +1,42 @@
-# Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+LMS (Learning Management System) clone using Clerk for authentication, Next.js 14, UploadThing for file uploads, and Stripe for payment integration:
 
-![Copy of Copy of Copy of Copy of Fullstack Twitter Clone (9)](https://github.com/AntonioErdeljac/next13-lms-platform/assets/23248726/fa077fca-bb74-419a-84de-54ac103bb026)
+# LMS Clone
 
+This is an LMS clone built with Next.js 14, Clerk, UploadThing, and Stripe.
+ 
+## Features
 
-This is a repository for Build an LMS Platform: Next.js 13,  React, Stripe, Mux, Prisma, Tailwind, MySQL | Full Course 2023
+- User authentication using Clerk
+- Course management
+- Lesson management
+- File uploads using UploadThing
+- Payment integration with Stripe
 
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=Big_aFLmekI)
+## Prerequisites
 
-Key Features:
+Before running the application, make sure you have the following installed:
 
-- Browse & Filter Courses
-- Purchase Courses using Stripe
-- Mark Chapters as Completed or Uncompleted
-- Progress Calculation of each Course
-- Student Dashboard
-- Teacher mode
-- Create new Courses
-- Create new Chapters
-- Easily reorder chapter position with drag n’ drop
-- Upload thumbnails, attachments and videos using UploadThing
-- Video processing using Mux
-- HLS Video player using Mux
-- Rich text editor for chapter description
-- Authentication using Clerk
-- ORM using Prisma
-- MySQL database using Planetscale
+- Node.js
+- npm or yarn
+- Clerk account  (https://www.clerk.dev/)
+- Stripe account  (https://stripe.com/)
 
-### Prerequisites
+## Installation
 
-**Node version 18.x.x**
+1. Clone the repository:
 
-### Cloning the repository
+     git clone https://github.com/benvilakazi/lms_demo.git 
+   
+2. Navigate to the project directory:
 
-```shell
-git clone https://github.com/AntonioErdeljac/next13-lms-platform.git
-```
+     cd lms-clone
+   
+3. Install dependencies:
 
-### Install packages
+     npm install
+   
+4. Create a   .env  file in the project root and add the following environment variables:
 
-```shell
-npm i
-```
-
-### Setup .env file
-
-
-```js
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=
@@ -66,28 +57,35 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 STRIPE_WEBHOOK_SECRET=
 
 NEXT_PUBLIC_TEACHER_ID=
-```
+   
+6. Start the development server:
 
-### Setup Prisma
+     npm run dev
+   
+7. Open your browser and navigate to   http://localhost:3000    to access the application.
 
-Add MySQL Database (I used PlanetScale)
+## Usage
 
-```shell
-npx prisma generate
-npx prisma db push
+1. Sign up or log in using Clerk authentication.
+2. Create courses and lessons.
+3. Upload files for lessons using UploadThing.
+4. Enable payment for courses using Stripe integration.
 
-```
+## Contributing
 
-### Start the app
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-```shell
-npm run dev
-```
+## License
 
-## Available commands
+This project is licensed under the [MIT License](LICENSE).
 
-Running commands with npm `npm run [command]`
+## Acknowledgements
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+- [Next.js] (https://nextjs.org/)
+- [Clerk] (https://www.clerk.dev/)
+- [UploadThing] (https://uploadthingy.com/)
+- [Stripe] (https://stripe.com/)
+
+That's it! You now have an LMS clone using Clerk for authentication, Next.js 14, UploadThing for file uploads, and Stripe for payment integration. Feel free to customize the README and the application as per your requirements.
+
+Let me know if there's anything else I can help you with!
