@@ -26,13 +26,13 @@ Before running the application, make sure you have the following installed:
 1. Clone the repository:
 
  ```bash
- git clone https://github.com/benvilakazi/lms_demo.git *
+ git clone https://github.com/benvilakazi/lms_demo.git
  ```
  
 2. Navigate to the project directory:
 
 ```bash
- cd lms-clone *
+ cd lms-clone 
 ``` 
 3. Install dependencies:
 ```bash
