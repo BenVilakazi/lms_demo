@@ -25,18 +25,21 @@ Before running the application, make sure you have the following installed:
 
 1. Clone the repository:
 
-  *   git clone https://github.com/benvilakazi/lms_demo.git *
-   
+ ```bash
+ git clone https://github.com/benvilakazi/lms_demo.git *
+ ```
+ 
 2. Navigate to the project directory:
 
-   *  cd lms-clone *
-   
+```bash
+ cd lms-clone *
+``` 
 3. Install dependencies:
-
+```bash
      npm install
-   
+ ```  
 4. Create a   .env  file in the project root and add the following environment variables:
-
+```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=
@@ -57,7 +60,7 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 STRIPE_WEBHOOK_SECRET=
 
 NEXT_PUBLIC_TEACHER_ID=
-   
+```   
 6. Start the development server:
 
      npm run dev
